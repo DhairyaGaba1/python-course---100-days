@@ -1,0 +1,17 @@
+Exception handling - It is the process of responsing to unwanted or unexpected events when a computer program runs. Exception handling deals with these events to run the program smoothly without any interuptions like system crashing, disruption of normal procedures.
+
+Exceptions in python -  Python has many build in Exceptions which are raised when your program encounters an error.
+-->If one of these exception occurs then python stops the current process and passes it to the calling process until it is handled and if not handled then the program will crash.
+-->It is done by try....except
+
+Finally clause - It is also a part of exception handling. It will always be displayed whether error occurs or not. It is used to show that the program has ended or we are closing a database connection.  
+
+Raise - We can raise custom errors using raise keyword.
+
+Defining custom exception - syntax in python file.
+
+Exercise 4 - Secret Code Language. 
+
+
+
+Videos - 36, 37, 38, 39, 40.

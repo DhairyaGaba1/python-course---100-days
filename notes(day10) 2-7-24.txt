@@ -1,0 +1,51 @@
+Recursion -  Process of defining something in terms of itself.
+-->In python this means calling the function in it.
+
+Set - Unordered collection of data items, multiple values in single variable, seperated by comma and enclosed by {}, immutable, cannot contain duplicate items.
+-->Most of the list methods can be performed on sets.
+-->Set items can be accessed by using for loop.
+
+Set methods :-
+1. s1.union(s2) - union of sets.
+2. s1.update(s2) - adds values from s2 to s1 which are not present in s2.
+-->Difference between union and update is that, in union a new set if formed while in case of update values are only added in the set.
+3. s1.intersection(s2) - intersection of sets.
+4. s1.intersection_update(s2) - Intersection of the sets is done in s1.
+-->In intersection a new set is formed while in intersection_update the previous set is edited.
+5. s1.symmetric_difference(s2) - Shows the values which are not common in both the sets.
+6. s1.symmetric_difference_update(s2) - same as above but the previous set is edited.
+7. s1.difference(s2) - values in s1 but not in s2
+8. s1.difference_update(s2) - same as above but the set is edited.
+9. isdisjoint() - checks if items of given set are present in other set.
+10. issuperset() - checks if items of given set are present in the original set.
+11. issubset() - checks if all the items of given set are present in the original set.
+12. add() - to add a single item to the set.
+13. update() - to add more than one item i.e. create another set or any other iterable object.
+14. remove()/discard() - used to remove an element from the set.
+-->The main difference between remove and discard is that, if we try to delete an item which is not present in set, then remove() raises an error, whereas discard() does not raise any error.
+15. pop() - Removes the last item  of the set but we don't know which value will be popped because the set is unordered.
+-->the value removed using popped can be accessed.
+16. del setname - delete the set along with all the items
+17. clear() - all the items are deleted while the set still remains as it is.
+
+Dictionary - It is ordered collection of data items, store multiple items in a single variable, key-value pairs, seperated by comma and enclosed within {}.
+-->Values in a dictionary can be accessed through its key. eg- dictionary[key]
+-->Values can also be accessed by dictionary.get(key)
+#First method will a throw an error if key doesnt exist, while second method won't throw error and show none is key doesnt exist.
+--> values() - we will get all values of dictionary.
+--> keys() - we will get all keys of dictionary.
+--> items() - returns all the key value pairs of the dictionary.
+
+Dictionary methods :-
+1. update() - updates the value of the key provided to it if the item already exists in the dictionary, else it creates a new key-value pair.
+2. clear() - clears all items from dictionary.
+3. pop() - removes the key-value pair from the dictionary whose key is passed as the parameter.
+4. popitem() - removes the last item of the dictionary.
+5. del - completely deletes the dictionary.
+
+--> We can use else with for and while loop. The statement of else loop will be executed once all the iterations of the loop are completed.
+->If break is used then the else statement will not be executed.
+#Basically else shows that the loop was executed sucessfully.
+
+
+Videos - 30, 31, 32, 33, 34, 35.

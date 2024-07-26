@@ -1,0 +1,59 @@
+~ Conditional statements - Check the value of certain expression and work on different paths depening upon if result is True or False.
+Types of Conditional statements:-
+1. if
+2. if-else
+3. if-elif-else
+4. nested if-elif-else
+
+~ Conditional operators - >, <. >=, <=. ==, !=
+
+~ Time module - used to print the current time.
+time.strftime() is used to get the time in whichever format we want.
+-->following can be the parameters:-
+1. %H:%M:%S - tells the time in hour,minute,second format.
+2. %H - tells the hour.
+3. %M - tells the minute.
+4. %S - tells the second.
+
+~ Exercise 2 - Good morning sir: Greet the person according to the time using time module. - DONE
+
+~ Match-case statements - A match statement will compare a given variable’s value to different shapes, also referred to as the pattern. The main idea is to keep on comparing the variable with all the present patterns until it fits into one.
+
+The match case consists of three main entities :
+
+1. The match keyword
+2. One or more case clauses
+3. Expression for each case
+
+The case clause consists of a pattern to be matched to the variable, a condition to be evaluated if the pattern matches, and a set of statements to be executed if the pattern matches.
+
+format is in the code file(default case(will only be matched if the above cases were not matched)).
+
+~ Loops - Used when we have to repeat a code for a certian number of times. They are classified further - for loop,while loop and nested loop.
+
+~ For loop - Used when we have to iterate over a iterable objects(strings, lists, tuples, dictionaries, sets). 
+
+-->Range(start, stop, step) - If we need to loop over a specific number of times.
+parameters:-
+start - from where to start
+stop - till where(it prints till number stop-1)
+step - gaps between the numbers.
+
+~ While loop - Loop executes while the condition in the while loop is True and stops as soon as the condition becomes False.
+-->We can use else with while loop, as soon as the while loop becomes false, the else statement will be executed.
+
+~ Do-while loop - It is a type of while loop which is executed no matter the condition given in the while loop is correct or not. - "will be done after continue and break statement."
+
+~ Break statement - Terminates the loop wherever it is used.
+
+~ Continue statement - Skips the current iteration.
+
+~ Functions - A block of code which performs a specific task when it is called. Two types of functions:
+Built-in functions - they are pre-defiend and can be used directly.
+User-defiend functions - they are made by us to perform specific tasks.
+
+--> Function is defined by def.
+
+~pass - bascially it does nothing and asks the interpreter to continue to the next statement.
+
+Videos - 14,15,16,17,18,19,20.

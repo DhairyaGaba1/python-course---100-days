@@ -1,0 +1,41 @@
+Function arguments - They are of four types:-
+1. Default argument
+2. Keyword argument
+3. Variable length argument
+4. Required argument
+
+Default arguements - these are given in the function heading when we are defining the function and these values are used when no value is provided to the function.
+
+Keyword arguements - we can provide arguments with '=', then the order won't matter.
+
+Variable-length arguments - It is used when we need to pass more than one value in the argument.
+
+--> Arbitrary Arguments: While creating a function, pass a * before the parameter name while defining the function. The function accesses the arguments by processing them in the form of tuple.
+
+--> Keyword Arbitrary Arguments: While creating a function, pass a ** before the parameter name while defining the function. The function accesses the arguments by processing them in the form of dictionary.
+
+Return Statement - It is used to return the value of the expression back to the calling function.
+
+Lists :-
+-> They are ordered collection of data items.
+-> They can store multiple values.
+-> List items are seperated by commas and enclosed within square brackets([]).
+-> Lists are mutable.
+-> Indexing of lists starts from 0(It has positive as well as negative indexing).
+
+--> in keyword can be used to check if an item is present inside the list(Same thing applies for strings as well).
+
+-->Range of list - We can do it by specifying where you want to start, where you want to end and how many gaps you want to give.
+Syntax - listName[Start : End : Jumpindex]
+
+List compreshension - It is used for creating new lists from other iterables like list, tuple, dictionaries, sets and even in arrays and strings.
+
+-->Syntax:-
+
+List = [Expression(item) for item in iterable if condition]
+
+
+
+
+
+Videos - 21, 22.

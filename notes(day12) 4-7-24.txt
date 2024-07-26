@@ -1,0 +1,29 @@
+One line if-else :- syntax in py file.
+--> Reuslt = value_if_true if condition else value_if_false
+
+Enumerate function -  It is built in function in python that allows you to loop over a sequence(list, tuple or string) and get the index value of each element in the sequence at the same time.
+eg - for index,fruit in enumerate(fruits)
+-->enumerate function returns a tuple containing the index and value of each element in sequence.
+-->By default index starts from 0 for enumerate function but we can change that.
+->it can be done by using start attribute.  
+
+Virtual environment -  A virtual environment is a tool used to isolate specific Python environments on a single machine, allowing you to work on multiple projects with different dependencies and packages without conflicts. This can be especially useful when working on projects that have conflicting package versions or packages that are not compatible with each other.
+-->To create a virtual environment in Python, you can use the venv module that comes with Python.
+->To create a virtual environment
+python -m venv myenv
+-->To activate virtual environment
+myenv\Scripts\activate.bat
+
+Requirment.txt file - In addition to creating and activating a virtual environment, it can be useful to create a requirements.txt file that lists the packages and their versions that your project depends on. This file can be used to easily install all the required packages in a new environment.
+# Output the list of installed packages and their versions to a file
+pip freeze > requirements.txt
+# Install the packages listed in the requirements.txt file
+pip install -r requirements.txt
+
+Import - Importing in Python is the process of loading code from a Python module into the current script. This allows you to use the functions and variables defined in the module in your current script, as well as any additional modules that the imported module may depend on.
+-->from keyword -  if you want to import only speific functions or variables from a module. 
+->if we use * then all functions will be imported.
+-->as keyword - If you want to import a module by a speific name
+-->Dir function - It is a built in function of python which can be used to view name of all the variables and functions defined in a module.
+
+Videos - 41, 42, 43, 44.

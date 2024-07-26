@@ -1,0 +1,194 @@
+Regular Expressions - Regular expressions, or "regex" for short, are a powerful tool for working with strings and text data in Python. They allow you to match and manipulate strings based on patterns, making it easy to perform complex string operations with just a few lines of code.
+
+Metacharacters in regular expressions
+1. []  Represent a character class
+2. ^   Matches the beginning
+3. $   Matches the end
+4. .   Matches any character except newline
+5. ?   Matches zero or one occurrence.
+6. |   Means OR (Matches with any of the characters separated by it.
+7. *   Any number of occurrences (including 0 occurrences)
+8. +   One or more occurrences
+9. {}  Indicate number of occurrences of a preceding RE to match.
+10. ()  Enclose a group of REs
+
+Find list of more meta characters here - https://www.ibm.com/docs/en/rational-clearquest/9.0.1?topic=tags-meta-characters-in-regular-expressions
+
+Searching for a pattern in re - re.search() method either returns None (if the pattern doesn’t match), or a re.MatchObject that contains information about the matching part of the string. This method stops after the first match, so this is best suited for testing a regular expression more than extracting data. We can use re.search method like this to search for a pattern in regular expression:
+match = re.search(pattern, text)
+
+Searching for a pattern in re using re.findall() Method - matches = re.findall(pattern, text)
+
+Replacing a pattern - new_text = re.sub(pattern, "dog", text)
+
+Extracting information from a string - 
+import re
+text = "The email address is example@example.com."
+pattern = r"\w+@\w+\.\w+"
+match = re.search(pattern, text)
+if match:
+    email = match.group()
+    print(email)
+
+Async IO - Asynchronous I/O, or async for short, is a programming pattern that allows for high-performance I/O operations in a concurrent and non-blocking manner. In Python, async programming is achieved through the use of the asyncio module and asynchronous functions.
+
+Syntax:-
+import asyncio
+async def my_async_function():
+    # asynchronous code here
+    await asyncio.sleep(1)
+    return "Hello, Async World!"
+async def main():
+    result = await my_async_function()
+    print(result)
+asyncio.run(main())
+
+--> Another way to schedule tasks concurrently is as follows:
+
+L = await asyncio.gather(
+        my_async_function(),
+        my_async_function(),
+        my_async_function(),
+    )
+print(L)
+
+Multithreading - Multithreading is a technique in programming that allows multiple threads of execution to run concurrently within a single process. In Python, we can use the threading module to implement multithreading.
+
+-->import threading
+
+--> Creating a thread - To create a thread, we need to create a Thread object and then call its start() method. The start() method runs the thread and then to stop the execution, we use the join() method:
+import threading
+def my_func():
+  print("Hello from thread", threading.current_thread().name)
+  thread = threading.Thread(target=my_func)
+  thread.start()
+  thread.join()
+
+Functions
+The following are some of the most commonly used functions in the threading module:
+
+threading.Thread(target, args): This function creates a new thread that runs the target function with the specified arguments.
+
+threading.Lock(): This function creates a lock that can be used to synchronize access to shared resources between threads.
+
+Creating multiple threads - Creating multiple threads is a common approach to using multithreading in Python. The idea is to create a pool of worker threads and then assign tasks to them as needed. This allows you to take advantage of multiple CPU cores and process tasks in parallel.
+import threading
+def thread_task(task):
+    # Do some work here
+    print("Task processed:", task)
+if __name__ == '__main__':
+    tasks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    threads = []
+    for task in tasks:
+        thread = threading.Thread(target=thread_task, args=(task,))
+        threads.append(thread)
+        thread.start()
+    for thread in threads:
+        thread.join()
+
+Using a lock to synchronize access to shared resources - When working with multithreading in python, locks can be used to synchronize access to shared resources among multiple threads. A lock is an object that acts as a semaphore, allowing only one thread at a time to execute a critical section of code. The lock is released when the thread finishes executing the critical section.
+import threading
+def increment(counter, lock):
+    for i in range(10000):
+        lock.acquire()
+        counter += 1
+        lock.release()
+if __name__ == '__main__':
+    counter = 0
+    lock = threading.Lock()
+    threads = []
+    for i in range(2):
+        thread = threading.Thread(target=increment, args=(counter, lock))
+        threads.append(thread)
+        thread.start()
+    for thread in threads:
+        thread.join()
+    print("Counter value:", counter)
+
+Multiprocessing - Multiprocessing is a Python module that provides a simple way to run multiple processes in parallel. It allows you to take advantage of multiple cores or processors on your system and can significantly improve the performance of your code.
+
+--> import multiprocessing
+
+--> Now, to use multiprocessing we need to create a process object which calls a start() method. The start() method runs the process and then to stop the execution, we use the join() method.
+
+--> Creating a process
+import multiprocessing
+def my_func():
+  print("Hello from process", multiprocessing.current_process().name)
+  process = multiprocessing.Process(target=my_func)
+  process.start()
+  process.join()
+
+--> Functions
+The following are some of the most commonly used functions in the multiprocessing module:
+
+multiprocessing.Process(target, args): This function creates a new process that runs the target function with the specified arguments.
+
+multiprocessing.Pool(processes): This function creates a pool of worker processes that can be used to parallelize the execution of a function across multiple input values.
+
+multiprocessing.Queue(): This function creates a queue that can be used to communicate data between processes.
+
+multiprocessing.Lock(): This function creates a lock that can be used to synchronize access to shared resources between processes.
+
+--> Creating a pool of worker processes - Creating a pool of worker processes is a common approach to using multiprocessing in Python. The idea is to create a pool of worker processes and then assign tasks to them as needed. This allows you to take advantage of multiple CPU cores and process tasks in parallel.
+
+from multiprocessing import Pool
+def process_task(task):
+    # Do some work here
+    print("Task processed:", task)
+if __name__ == '__main__':
+    tasks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    with Pool(processes=4) as pool:
+        results = pool.map(process_task, tasks)
+
+--> Using a queue to communicate between processes - When working with multiple processes, it is often necessary to pass data between them. One way to do this is by using a queue. A queue is a data structure that allows data to be inserted at one end and removed from the other end. In the context of multiprocessing, a queue can be used to pass data between processes.
+def producer(queue):
+    for i in range(10):
+        queue.put(i)
+def consumer(queue):
+    while True:
+        item = queue.get()
+        print(item)
+queue = multiprocessing.Queue()
+p1 = multiprocessing.Process(target=producer, args=(queue,))
+p2 = multiprocessing.Process(target=consumer, args=(queue,))
+p1.start()
+p2.start()
+
+--> Using a lock to synchronize access to shared resources - When working with multiprocessing in python, locks can be used to synchronize access to shared resources among multiple processes. A lock is an object that acts as a semaphore, allowing only one process at a time to execute a critical section of code. The lock is released when the process finishes executing the critical section.
+
+def increment(counter, lock):
+    for i in range(10000):
+        lock.acquire()
+        counter.value += 1
+        lock.release()
+if __name__ == '__main__':
+    counter = multiprocessing.Value('i', 0)
+    lock = multiprocessing.Lock()
+    p1 = multiprocessing.Process(target=increment, args=(counter, lock))
+    p2 = multiprocessing.Process(target=increment, args=(counter, lock))
+    p1.start()
+    p2.start()
+    p1.join()
+    p2.join()
+    print("Counter value:", counter.value)
+
+Where to go from here:
+To continue your learning journey, consider exploring the following resources:
+
+Python books: There are many excellent books on Python that can help you deepen your knowledge and skills. Some popular options include "Python Crash Course" by Eric Matthes, "Automate the Boring Stuff with Python" by Al Sweigart, and "Fluent Python" by Luciano Ramalho. I would also like to recommend "Hands on Machine Learning book by Aurélien Géron"
+
+YouTube Projects: There are many YouTube projects available which can be watched after you have some basic understanding of python
+
+Python communities: There are many online communities where you can connect with other Python learners and experts, ask questions, and share your knowledge. Some popular options include the Python subreddit, the Python Discord server, and the Python community on Stack Overflow.
+
+GitHub repositories: GitHub is a great resource for finding Python projects, libraries, and code snippets. Some useful repositories to check out include "awesome-python" (a curated list of Python resources), "scikit-learn" (a machine learning library), and "django" (a web development framework).
+
+Link to some resources
+Tkinter - You can learn Tkinter which is used to create GUIs from here :
+Machine Learning - I loved this playlist from Google Developers
+Django - For Django, try the tutorial from the official documentation. Trust me its really good
+
+
+Videos - 95, 96, 97, 98, 100.
+#Video 99 after completing excercise 11

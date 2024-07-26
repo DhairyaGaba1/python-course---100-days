@@ -1,0 +1,9 @@
+len() - used to find length of a string.
+
+[:] - is used for string slicing.
+
+-->There are two types of indexing:
+1 - positive indexing: Starts from left side and first index is 0.
+2 - negative indexing: Starts from right side and first index is -1.
+
+Video - 12.

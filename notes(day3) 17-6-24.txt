@@ -1,0 +1,14 @@
+Typecasting - Conversion of one data type into another data type.
+Following can be used for typecasting - int(), float(), str(), ord(), hex(), oct(), tuple(), set(), list(), dict().
+Types of typecasting:
+1 - Implicit typecasting - It is done by python itself.
+2 - Explicit typecasting - It is done by the developer(smaller datatype to higher datatype to prevent data loss).
+
+input() - It is used to take input from the user.
+-->Python takes input as string, to convert it into a number we use int()/float() which is known as typecasting.
+
+Strings - Anything enclosed between double/single quotes.
+Multiline strings - Can be done by using '''.
+Indexing of strings - String is like an array of characters and the indexing starts from 0 and goes upto (number of characters in string - 1).
+
+Videos - 9,10,11.

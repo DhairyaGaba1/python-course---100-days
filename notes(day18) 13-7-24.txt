@@ -1,0 +1,48 @@
+dir(): The dir() function returns a list of all the attributes and methods (including dunder methods) available for an object. It is a useful tool for discovering what you can do with an object.
+
+__dict__: The __dict__ attribute returns a dictionary representation of an object's attributes. It is a useful tool for introspection.
+
+help(): The help() function is used to get help documentation for an object, including a description of its attributes and methods.
+
+super() - The super() keyword in Python is used to refer to the parent class. It is especially useful when a class inherits from multiple parent classes and you want to call a method from one of the parent classes.
+
+--> When a class inherits from a parent class, it can override or extend the methods defined in the parent class. However, sometimes you might want to use the parent class method in the child class. This is where the super() keyword comes in handy.
+
+--> The super() keyword is also useful when a class inherits from multiple parent classes. In this case, you can specify the parent class from which you want to call the method.
+
+Magic/Dunder Methods - These are special methods that you can define in your classes, and when invoked, they give you a powerful way to manipulate objects and their behaviour.
+
+--> Magic methods, also known as “dunders” from the double underscores surrounding their names, are powerful tools that allow you to customize the behaviour of your classes. They are used to implement special methods such as the addition, subtraction and comparison operators, as well as some more advanced techniques like descriptors and properties.
+
+__init__ - The init method is a special method that is automatically invoked when you create a new instance of a class. This method is responsible for setting up the object’s initial state, and it is where you would typically define any instance variables that you need. Also called "constructor".
+
+__str__ - The str method is used when you want to print out an object
+
+__repr__ - the repr method is used when you want to get a string representation of an object that can be used to recreate the object.
+
+__len__ - The len method is used to get the length of an object. This is useful when you want to be able to find the size of a data structure, such as a list or dictionary.
+
+__call__ - The call method is used to make an object callable, meaning that you can pass it as a parameter to a function and it will be executed when the function is called. This is an incredibly powerful tool that allows you to create objects that behave like functions.
+
+Method Overriding - Method overriding is a powerful feature in object-oriented programming that allows you to redefine a method in a derived class. The method in the derived class is said to override the method in the base class. When you create an instance of the derived class and call the overridden method, the version of the method in the derived class is executed, rather than the version in the base class.
+
+--> In Python, method overriding is a way to customize the behavior of a class based on its specific needs.
+
+--> Another way to customize the behavior of a class is to call the base class method from the derived class method. To do this, you can use the super function. The super function allows you to call the base class method from the derived class method, and can be useful when you want to extend the behavior of the base class method, rather than replace it.
+
+Operator Overloading - Operator Overloading is a feature in Python that allows developers to redefine the behavior of mathematical and comparison operators for custom data types. This means that you can use the standard mathematical operators (+, -, *, /, etc.) and comparison operators (>, <, ==, etc.) in your own classes, just as you would for built-in data types like int, float, and str.
+
+--> Operator overloading allows you to create more readable and intuitive code.
+
+--> You can overload an operator in Python by defining special methods in your class. These methods are identified by their names, which start and end with double underscores (__). Here are some of the most commonly overloaded operators and their corresponding special methods:
+
++ : __add__
+- : __sub__
+* : __mul__
+/ : __truediv__
+< : __lt__
+> : __gt__
+== : __eq__
+
+Videos - 71, 72, 73, 74, 76, 77.
+#Video 75 after completing project  7

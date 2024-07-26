@@ -1,0 +1,45 @@
+File handling -  we can open, read, edit and perform many functions on a file using python.
+
+open() - it is used to open a file.
+-->first argument is name of file
+-->Second argument is the mode in which the file will be opened.
+->Modes to open a file:-
+1. read (r): This mode opens the file for reading only and gives an error if the file does not exist. This is the default mode if no mode is passed as a parameter.
+
+2. write (w): This mode opens the file for writing only and creates a new file if the file does not exist.
+
+3. append (a): This mode opens the file for appending only and creates a new file if the file does not exist.
+
+4. create (x): This mode creates a file and gives an error if the file already exists.
+
+5. text (t): Apart from these modes we also need to specify how the file must be handled. t mode is used to handle text files. t refers to the text mode. There is no difference between r and rt or w and wt since text mode is the default. The default mode is 'r'.
+
+6. binary (b): used to handle binary files (images, pdfs, etc).
+-->By default, the open() function returns a file object that can be used to read from or write to the file, depending on the mode.
+
+write() - used to write in a file
+-->We need to open file in w or a mode to do so.
+
+close() - after performing our actions we must close the file.
+
+with statement - can be used to open a file then we will not have to close a file.
+syntax - with open("filename","mode") as f:
+
+readlines() - reads a single line for a file.
+read() - reads all characters from the file in form of string.
+readlines() - reads all characters from the file in form of list with each element as the line of the file.
+
+writelines() - This method in Python writes a sequence of strings to a file. The sequence can be any iterable object, such as a list or a tuple.
+-->writelines() method does not add newline characters between the strings in the sequence. If you want to add newlines between the strings, you can use a loop to write each string separately.
+
+seek() - The seek() function allows you to move the current position within a file to a specific point. The position is specified in bytes, and you can move either forward or backward from the current position.
+
+tell() - The tell() function returns the current position within the file, in bytes. This can be useful for keeping track of your location within the file or for seeking to a specific position relative to the current position.  
+
+truncate() - if you want to truncate the file to a specific size, you can use the truncate function.
+
+lambda function -  a lambda function is a small anonymous function without a name. It is defined using the lambda keyword and has the following syntax:
+lambda arguments: expression
+
+
+Videos - 49, 50, 51, 52.

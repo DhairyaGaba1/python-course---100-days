@@ -1,0 +1,33 @@
+List methods:-
+
+1. append() - it is used to add element in the list(it is added to the end of the list).
+2. sort() - It sorts the list in ascending order.
+-->if we use reverse=True then we get descending order.
+3. reverse() - Reverse the order of the list.
+4. index() - returns of index of the first occurence of the given item.
+5. count() - tells the number of occurences of the given item.
+6. copy() -  returns copy of the list. This can be done to perform operations of the list without modifying it.
+7. insert() - it is used to insert element in the list at certain index number.
+--> syntax - list.insert(index_no,"item")
+8. extend() - used to insert list or any other collection data type(set, tuple, dictionary) to the existing list.
+9. concatenating the two lists - it is done by adding + symbol between two lists.
+
+Tuples - They are same as list the only difference is that they are immutable.
+-->Its indexing is same as list and has both positive and negative indexing.
+-->We can check for item in it by using the keyword 'in'.
+-->Slicing can be done in tuple using same method in list.
+-> tuplename[start:end:gaps]
+-> We get a new tuple when we do tuple slicing.
+
+Tuple methods:-
+
+1. Manipulating a tuple - It cannot be done directly,  to do so we need to first convert it into a list add an item and then convert it into tupple again.
+--> We can create a new tuple by concatenating them as a new tuple will be formed.
+2. count() - tells the number of occurences of the given element.
+3. index() - returns the index of the first occurence of the given element.
+->tuple.index(element, start, end) - first slicing then it checks the occurence of the element.
+4. len() - returns the length of the tuple.
+
+Exercise 3 - Create a program capable of displaying questions to the user like KBC - Pending.
+
+Videos - 23, 24, 25, 26, 27.

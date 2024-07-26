@@ -1,0 +1,39 @@
+Print() - used to display characters.
+Multiple values can be inserted in print statemnt at the same time.
+parameters for print statement:
+1 - sep: between the values
+2 - end: comes after all the statements are printed.
+3 - file: Later in the course.
+--> These all parameters are optional
+
+Comments - Given by programmer which is not to be executed by the interpreter. They are of two types:
+1 - single line comment: starts with '#'.
+2 - multi line comment: starts with either '#' before every line or using " ''' .... ''' ".
+
+Escape sequence character - To insert characters in a string which directly cannot be inserted. It is a \ followed by the character you want to use.
+
+Variable - Container that holds data.
+
+Data types - Specifies the type of value a variable holds. There are four types of datatype:
+1 - Numeric data type: int, float, complex
+2 - Text data: str
+3 - Boolean: bool
+4 - Sequenced data: List, Tuple
+5 - Mapped data: dict
+
+Type(a) - Tells the datatype of variable 'a'.
+
+Operators - Used for different operations. There are different types of operators in python:
+I) Arithmetic operators:
+i) + : Addition - adds the numbers
+ii) - : Subtraction - subtracts the numbers
+iii) * : Multiplication - multiplies the numbers
+iv) / : Division - divides the numbers and returns the quotient with decimal
+v) % : Modulus - divides the numbers and returns the remainder
+vi) // : Floor division - divides the numbers and retures the quotient without decimal
+
+Exercise 1 - Create a calculator that can perform addition, multiplication, division and subtraction on two numbers. - DONE
+
+
+
+Video - 4,5,6,7,8.

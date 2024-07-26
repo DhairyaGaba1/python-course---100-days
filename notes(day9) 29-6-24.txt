@@ -1,0 +1,19 @@
+Traditional method of String formatting - syntax in code from line 2 to line 5.
+
+New method of string formatting i.e. f string, which is done by putting letter f before the string.(from line 7 to line )
+
+Docstrings - It is a string printed as the description of function, method, class or module.
+-->whenever we import a module the docstring is printed.
+
+Python comments - Comments are descriptions that help programmers better understand the intent and functionality of the program. They are completely ignored by the Python interpreter.
+
+Python docstrings - As mentioned above, Python docstrings are strings used right after the definition of a function, method, class, or module (like in Example 1). They are used to document our code.
+We can access these docstrings using the doc attribute.
+
+-->syntax - print(abc,__doc__)
+
+PEP8 - PEP 8 is a document that provides guidelines and best practices on how to write Python code. It was written in 2001 by Guido van Rossum, Barry Warsaw, and Nick Coghlan. The primary focus of PEP 8 is to improve the readability and consistency of Python code.
+
+PEP stands for Python Enhancement Proposal, and there are several of them. A PEP is a document that describes new features proposed for Python and documents aspects of Python, like design and style, for the community.
+
+Videos - 28,29. 

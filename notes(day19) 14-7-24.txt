@@ -1,0 +1,90 @@
+Single Inheritance - Single inheritance is a type of inheritance where a class inherits properties and behaviors from a single parent class. This is the simplest and most common form of inheritance.
+
+Syntax:-
+class ChildClass(ParentClass):
+    # class body
+
+Multiple Inheritance - Multiple inheritance is a powerful feature in object-oriented programming that allows a class to inherit attributes and methods from multiple parent classes. This can be useful in situations where a class needs to inherit functionality from multiple sources.
+
+Syntax:
+class ChildClass(ParentClass1, ParentClass2, ParentClass3):
+    # class body
+
+mro() - Method Resolution Order(MRO) it denotes the way a programming language resolves a method or attribute.
+
+Multilevel Inheritance - Multilevel inheritance is a type of inheritance in object-oriented programming where a derived class inherits from another derived class. This type of inheritance allows you to build a hierarchy of classes where one class builds upon another, leading to a more specialized class.
+
+Syntax:
+class BaseClass:
+    # Base class code
+    
+class DerivedClass1(BaseClass):
+    # Derived class 1 code
+    
+class DerivedClass2(DerivedClass1):
+    # Derived class 2 code
+
+Hybrid Inheritance - Hybrid inheritance is a combination of multiple inheritance and single inheritance in object-oriented programming. It is a type of inheritance in which multiple inheritance is used to inherit the properties of multiple base classes into a single derived class, and single inheritance is used to inherit the properties of the derived class into a sub-derived class.
+
+Syntax:
+class BaseClass1:
+  # attributes and methods
+
+class BaseClass2:
+  # attributes and methods
+
+class DerivedClass(BaseClass1, BaseClass2):
+  # attributes and methods
+
+Hierarchical Inheritance - Hierarchical Inheritance is a type of inheritance in Object-Oriented Programming where multiple subclasses inherit from a single base class. In other words, a single base class acts as a parent class for multiple subclasses. This is a way of establishing relationships between classes in a hierarchical manner.
+
+Time module - The time module in Python provides a set of functions to work with time-related operations, such as timekeeping, formatting, and time conversions. This module is part of the Python Standard Library and is available in all Python installations, making it a convenient and essential tool for a wide range of applications.
+
+time.time() - The time.time() function returns the current time as a floating-point number, representing the number of seconds since the epoch (the point in time when the time module was initialized). The returned value is based on the computer's system clock and is affected by time adjustments made by the operating system, such as daylight saving time.
+
+--> the function returns the current time as a floating-point number
+
+time.sleep() - The time.sleep() function suspends the execution of the current thread for a specified number of seconds. This function can be used to pause the program for a certain period of time, allowing other parts of the program to run, or to synchronize the execution of multiple threads.
+
+time.strftime() - The time.strftime() function formats a time value as a string, based on a specified format. This function is particularly useful for formatting dates and times in a human-readable format, such as for display in a GUI, a log file, or a report. 
+
+--> time.strftime() formats the current time (obtained using time.localtime()) as a string
+
+Command Line Utilities - Command line utilities are programs that can be run from the terminal or command line interface, and they are an essential part of many development workflows. In Python, you can create your own command line utilities using the built-in argparse module.
+
+Syntax:-
+import argparse
+parser = argparse.ArgumentParser()
+# Add command line arguments
+parser.add_argument("arg1", help="description of argument 1")
+parser.add_argument("arg2", help="description of argument 2")
+# Parse the arguments
+args = parser.parse_args()
+# Use the arguments in your code
+print(args.arg1)
+print(args.arg2)
+
+--> Adding optional arguments:
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("-o", "--optional", help="description of optional argument", default="default_value")
+args = parser.parse_args()
+print(args.optional)
+
+--> Adding positional arguments:
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("positional", help="description of positional argument")
+args = parser.parse_args()
+print(args.positional)
+
+--> Adding arguments with type:
+
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("-n", type=int, help="description of integer argument")
+args = parser.parse_args()
+print(args.n)
+
+Videos - 78, 79, 80, 81, 83, 84, 85.
+#Video 82 after completing exercise 8

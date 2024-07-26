@@ -1,0 +1,31 @@
+#String methods:-
+-->Strings are immutable(we cannot edit them.)
+
+1 - upper(): converts string to uppercase.
+2 - len(): used to find length of the string.
+3 - lower(): converts string to lowercase.
+4 - rstrip(): removes any trailing characters.
+5 - replace(): removes all occurences of string with another string.
+6 - split(): splits the given string at the specific character given in the paranthesis and seperates string as list items.
+7 - capitalize(): makes the first letter of the string capital and makes the other letters small.
+8 - center(): aligns the string to the center as per the given parameters.
+9 - count(): returns the number of times the given value has occured within the given string.
+10 - endswith(): checks if the string ends with the given characters(returns True or False).
+-->We can also check for a value in between the string by providing start and end index positions.
+11 - find(): Searches first index of given value and returns the index where it is present.
+-->returns -1 if it is not present.
+12 - index(): Same as find()
+-->shows error if it id not present.
+13 - isalnum(): Retures true if the entire string only has A-Z, a-z or 0-9.
+14 - isalpha(): Returns true if the entire string only has A-z or a-z.
+15 - islower(): Returns true if the entire string is in lowercase.
+16 - isprintable(): Returns true only if all the values in the string are printable.
+17 - isspace(): Returns true only if string contains white spaces.
+18 - istitle(): Returns true only if first letter of each word of string is capital.
+19 - isupper(): Returns true only if all characters in the string are in uppercase.
+20 - startswith(): Returns true only if all characters in the string start with the given value.
+21 - swapcase(): Changes the character casing of the string(Upper to lower and lower to upper).
+22 - title(): capitalizes each letter of the string.
+
+
+Videos - 13.

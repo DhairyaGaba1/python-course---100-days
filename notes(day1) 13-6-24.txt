@@ -1,0 +1,9 @@
+Python - simple, interpreted, open-source, big library support.
+
+Modules(docs.python.org/3/py-modindex.html) - It is like a code librart which can be imported. They are of two types:
+1 - built in modules: already downloaded and can be imported anytime.
+2 - external modules: downloaded on your computer through 'pip' and then can be imported.
+
+Pip - Package manager to install a python module.
+
+videos - 1,2,3
