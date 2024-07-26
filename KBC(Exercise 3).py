@@ -13,28 +13,28 @@ def lifeline(l_lines):
         print("From which category would you like to replace your question with?(Gaming/Religion/History/Sports)?")
         b=input("Enter a choice(please enter the proper name of the category): ")
         if b.lower()=="gaming":
-            ques=input("Who has created the game God Of War:Ragnarok?")
+            ques=print("Who has created the game God Of War:Ragnarok?")
             ans=input("Enter your answer:")
             if ans.lower() in "santa monica studios":
                 print("You got the right answer")
             else:
                 print("Sorry but your answer wasn't correct.")
         elif b.lower()=="religion":
-            ques=input("Which religious figure’s statue was the tallest in the world until it was over taken by the Statue of Unity?")
+            ques=print("Which religious figure’s statue was the tallest in the world until it was over taken by the Statue of Unity?")
             ans=input("Enter your answer:")
             if ans.lower() in "lord buddha":
                 print("You got the right answer")
             else:
                 print("Sorry but your answer wasn't correct.")
         elif b.lower()=="history":
-            ques=input("Who killed Mohandas Karamchand Gandhi?")
+            ques=print("Who killed Mohandas Karamchand Gandhi?")
             ans=input("Enter your answer:")
             if ans.lower() in "nathuram godse":
                 print("You got the right answer")
             else:
                 print("Sorry but your answer wasn't correct.")
         elif b.lower()=="sports":
-            ques=input("Who has scored most runs in finals for india in ICC events?")
+            ques=print("Who has scored most runs in finals for india in ICC events?")
             ans=input("Enter your answer:")
             if ans.lower() in "virat kohli":
                 print("You got the right answer")
