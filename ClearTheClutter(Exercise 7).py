@@ -5,3 +5,8 @@
 # design.png --> 4.png
 # name.png --> 5.png
 
+import os
+a = os.listdir(f"images-for-ex7")
+for i in a:
+    x=a.index(i)
+    os.rename(f"images-for-ex7\{i}", f"images-for-ex7\{x}")
