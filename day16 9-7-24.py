@@ -39,22 +39,22 @@
 
 #Code for video 61
 
-# class Employee:
-#     def __init__(self, name, id):
-#         self.name=name
-#         self.id=id
+class Employee:
+    def __init__(self, name, id):
+        self.name=name
+        self.id=id
         
-#     def showDetails(self):
-#         print(f"The name of employee: {self.id} is {self.name}")
+    def showDetails(self):
+        print(f"The name of employee: {self.id} is {self.name}")
         
-# class Programmer(Employee):
-#     def showLanguage(self):
-#         print("The default language is python")
-# e1=Employee("Parth", 18)
-# e1.showDetails()
-# e2=Programmer("Alpha", 4210)
-# e2.showDetails()
-# e2.showLanguage()
+class Programmer(Employee):
+    def showLanguage(self):
+        print("The default language is python")
+e1=Employee("Parth", 18)
+e1.showDetails()
+e2=Programmer("Alpha", 4210)
+e2.showDetails()
+e2.showLanguage()
 
 #Code for video 62
 
@@ -66,22 +66,22 @@
 # print(a._Employee__name)
 # print(a.__name) #Cant be accessed directly
 
-class Student:
-    def __init__(self):
-        self._name = "Harry"
+# class Student:
+#     def __init__(self):
+#         self._name = "Harry"
 
-    def _funName(self):      # protected method
-        return "CodeWithHarry"
+#     def _funName(self):      # protected method
+#         return "CodeWithHarry"
 
-class Subject(Student):       #inherited class
-    pass
+# class Subject(Student):       #inherited class
+#     pass
 
-obj = Student()
-obj1 = Subject()
-print(dir(obj))
-# calling by object of Student class
-print(obj._name)      
-print(obj._funName())     
-# calling by object of Subject class
-print(obj1._name)    
-print(obj1._funName())
+# obj = Student()
+# obj1 = Subject()
+# print(dir(obj))
+# # calling by object of Student class
+# print(obj._name)      
+# print(obj._funName())     
+# # calling by object of Subject class
+# print(obj1._name)    
+# print(obj1._funName())
