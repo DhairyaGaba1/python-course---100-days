@@ -19,6 +19,7 @@ def lifeline(l_lines):
                 print("You got the right answer")
             else:
                 print("Sorry but your answer wasn't correct.")
+                break
         elif b.lower()=="religion":
             ques=print("Which religious figure’s statue was the tallest in the world until it was over taken by the Statue of Unity?")
             ans=input("Enter your answer:")
@@ -26,6 +27,7 @@ def lifeline(l_lines):
                 print("You got the right answer")
             else:
                 print("Sorry but your answer wasn't correct.")
+                break
         elif b.lower()=="history":
             ques=print("Who killed Mohandas Karamchand Gandhi?")
             ans=input("Enter your answer:")
@@ -33,6 +35,7 @@ def lifeline(l_lines):
                 print("You got the right answer")
             else:
                 print("Sorry but your answer wasn't correct.")
+                break
         elif b.lower()=="sports":
             ques=print("Who has scored most runs in finals for india in ICC events?")
             ans=input("Enter your answer:")
@@ -40,6 +43,7 @@ def lifeline(l_lines):
                 print("You got the right answer")
             else:
                 print("Sorry but your answer wasn't correct.")
+                break
     else:
         print("Please enter a valid lifeline name.")
         # ask_type=input("Which type of question do you want")
