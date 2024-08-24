@@ -77,7 +77,7 @@ D) Piyush Goyal
                     else:
                         print("Sorry your answer wasn't correct, you won Rs.0")
                         break
-            if i==q_bank[1]:
+            elif i==q_bank[1]:
                 print('''Your options for the question are:
 A) Agni
 B) Indra
@@ -98,7 +98,7 @@ D) Ganesha
                     else:
                         print("Sorry your answer wasn't correct, you won Rs.0")
                         break
-            if i==q_bank[2]:
+            elif i==q_bank[2]:
                 print('''Your options for the question are:
 A) Money 
 B) Flowers
@@ -119,7 +119,7 @@ D) Fruits
                     else:
                         print("Sorry your answer wasn't correct, you won Rs.0")
                         break
-            if i==q_bank[3]:
+            elif i==q_bank[3]:
                 print('''Your options for the question are:
 A) Bangalore
 B) Maysore
@@ -140,7 +140,7 @@ D) Kochi
                     else:
                         print("Sorry your answer wasn't correct, you won Rs.0")
                         break
-            if i==q_bank[4]:
+            elif i==q_bank[4]:
                 print('''Your options for the question are:
 A) Rabindranath Tagore
 B) Lal Bahadur Shastri
@@ -161,7 +161,7 @@ D) RK Narayan
                     else:
                         print("Sorry your answer wasn't correct, you won Rs.10000")
                         break
-            if i==q_bank[5]:
+            elif i==q_bank[5]:
                 print('''Your options for the question are:
 A) 6
 B) 7
@@ -182,7 +182,7 @@ D) 9
                     else:
                         print("Sorry your answer wasn't correct, you won Rs.10000")
                         break
-            if i==q_bank[6]:
+            elif i==q_bank[6]:
                 print('''Your options for the question are:
 A) 13 September
 B) 14 September
@@ -203,7 +203,7 @@ D) 15 August
                     else:
                         print("Sorry your answer wasn't correct, you won Rs.10000")
                         break
-            if i==q_bank[7]:
+            elif i==q_bank[7]:
                 print('''Your options for the question are:
 A) 28
 B) 29
@@ -224,7 +224,7 @@ D) 30
                     else:
                         print("Sorry your answer wasn't correct, you won Rs.10000")
                         break
-            if i==q_bank[8]:
+            elif i==q_bank[8]:
                 print('''Your options for the question are:
 A) Agra
 B) Punjab
@@ -245,7 +245,7 @@ D) New Delhi
                     else:
                         print("Sorry your answer wasn't correct, you won Rs.10000")
                         break
-            if i==q_bank[9]:
+            elif i==q_bank[9]:
                 print('''Your options for the question are:
 A) Sarat Chandra Chattopadhyay
 B) Rabindranath Tagore
